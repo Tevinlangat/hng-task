@@ -28,8 +28,8 @@ app.get('/api',(req,res)=>{
         "current_day":day,
         "utc_time":date,
         "track":day,
-        "github_file_url": "https://github.com/Tevinlangat/HNG-tasks/blob/main/index.js",
-        "github_repo_url": "https://github.com/Tevinlangat/HNG-tasks",
+        "github_file_url": "https://github.com/Tevinlangat/hng-task/blob/main/index.js",
+        "github_repo_url": "https://github.com/Tevinlangat/hng-task",
         "status_code":200
 
     })
