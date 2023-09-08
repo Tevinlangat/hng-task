@@ -21,12 +21,13 @@ app.get('/api',(req,res)=>{
     const date = new Date()
     const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
     const day = days[date.getDay()]
-    
+    date.setMilliseconds(0);
+    var time = date.toISOString().replace(".000Z", "Z");
 
     res.status(200).json({
         "slack_name":slack_name,
         "current_day":day,
-        "utc_time":date,
+        "utc_time":time,
         "track":track,
         "github_file_url": "https://github.com/Tevinlangat/hng-task/blob/main/index.js",
         "github_repo_url": "https://github.com/Tevinlangat/hng-task",
