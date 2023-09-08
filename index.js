@@ -27,7 +27,7 @@ app.get('/api',(req,res)=>{
         "slack_name":slack_name,
         "current_day":day,
         "utc_time":date,
-        "track":day,
+        "track":track,
         "github_file_url": "https://github.com/Tevinlangat/hng-task/blob/main/index.js",
         "github_repo_url": "https://github.com/Tevinlangat/hng-task",
         "status_code":200
